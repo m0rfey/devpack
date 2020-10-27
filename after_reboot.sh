@@ -5,12 +5,6 @@ CRONTAB='/var/spool/cron/crontabs'
 INITD='/etc/init.d'
 
 
-# Configured default .zshrc
-#cp $PWD/.zshrc.default $PWD/.zshrc
-#sed -i "s~oh_my_zsh_path~$HOME/.oh-my-zsh~g" $PWD/.zshrc
-#ln -s $PWD/.zshrc $HOME/.zshrc
-
-
 # Installing oh-my-zsh framework
 echo '---------- Installing oh-my-zsh ----------'
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -32,7 +26,7 @@ sed -i "s~oh_my_zsh_path~$HOME/.oh-my-zsh~g" $HOME/.zshrc
 #ln -s $PWD/.zshrc $HOME/.zshrc
 
 # Commenting line in configuration
-sed -i "s~  prompt_context~#  prompt_context~g" $PWD/.oh-my-zsh/themes/agnoster.zsh-theme
+sed -i "s~  prompt_context~#  prompt_context~g" $HOME/.oh-my-zsh/themes/agnoster.zsh-theme
 
 sudo reboot
 echo '---------- DONE ----------'

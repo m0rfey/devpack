@@ -44,6 +44,7 @@ Plugin 'stephpy/vim-yaml'     " YAML
 " Plugin 'valloric/youcompleteme' " For vim v8.1+
 Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-surround'
+Plugin 'mhartington/oceanic-next'
 
 
 
@@ -138,9 +139,15 @@ if has("gui_macvim")
   noremap <D-0> :tablast<CR>
 endif
 
+if (has("termguicolors"))
+    set termguicolors
+endif
+
 set guifont=Monaco:h18
-" colorscheme OceanicNext
-colorscheme xian
+colorscheme OceanicNext
+
+" let g:airline_theme='oceanicnext'
+" colorscheme xian
 
 " My Mapping
 map <C-n> :NERDTreeToggle<CR>

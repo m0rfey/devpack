@@ -23,13 +23,28 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'rstacruz/sparkup', { 'rtp': 'vim/' }
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
+" More plugins on https://vimawesome.com/
+
+" Project tree
+Plugin 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+
+" Support language and syntax
+Plugin 'davidhalter/jedi-vim' " Python
+Plugin 'fatih/vim-go'         " Golang
+Plugin 'elzr/vim-json'        " JSON
+Plugin 'stephpy/vim-yaml'     " YAML
+" Plugin 'sheerun/vim-polyglot' " For many language
+
+
+" Plugin 'valloric/youcompleteme' " For vim v8.1+
 Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-surround'
+
 
 
 " All of your Plugins must be added before the following line
@@ -124,4 +139,9 @@ if has("gui_macvim")
 endif
 
 set guifont=Monaco:h18
-colorscheme OceanicNext
+" colorscheme OceanicNext
+colorscheme xian
+
+" My Mapping
+map <C-n> :NERDTreeToggle<CR>
+

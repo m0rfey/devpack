@@ -28,7 +28,9 @@ ln -s $HOME/.tmux/.tmux.conf $HOME/.tmux.conf
 cp $HOME/.tmux/.tmux.conf.local $HOME/
 
 sed -i "s~#{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} ,~ ~g" $HOME/.tmux.conf.local
-
+# sed -i "s~screen-256color~xterm-256color~g" $HOME/.tmux.conf
+# sed -i '12i\set-option -ga terminal-overrides ",xterm-256color:Tc"\' ~/.tmux.conf
+# echo 'set-option -ga terminal-overrides ",xterm-256color:Tc"' >> $HOME/.tmux.conf
 # ********** ZSH ***************
 echo "------------- ZSH configuration ... -------------"
 zsh --version

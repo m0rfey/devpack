@@ -112,4 +112,5 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
-export PATH=/home/m0rfey/.local/bin:$PATH:$GOROOT:$GOPATH
+export PATH=$HOME/.local/bin:$PATH:$GOROOT:$GOPATH
+

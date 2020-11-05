@@ -139,10 +139,6 @@ if has("gui_macvim")
   noremap <D-0> :tablast<CR>
 endif
 
-if (has("termguicolors"))
-    set termguicolors
-endif
-
 set guifont=Monaco:h18
 colorscheme OceanicNext
 
